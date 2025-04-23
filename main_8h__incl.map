@@ -8,7 +8,7 @@
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="212,33,212,64,206,64,206,33"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="277,155,359,181"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="220,31,302,141,298,144,216,34"/>
-<area shape="rect" id="Node000006" href="$sys__clock_8h_source.html" title=" " alt="" coords="314,80,405,107"/>
+<area shape="rect" id="Node000006" href="$sys__clock_8h.html" title="Реализация конфигурации системного времени" alt="" coords="314,80,405,107"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="236,30,321,70,318,75,234,35"/>
 <area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="355,109,335,143,330,140,350,106"/>
 </map>

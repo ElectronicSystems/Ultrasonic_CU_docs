@@ -4,9 +4,9 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="518,27,331,47,89,83,85,83,84,78,88,77,330,42,518,21"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="109,155,169,181"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="518,22,422,23,306,31,250,38,200,49,160,63,134,82,127,94,125,109,130,140,125,141,120,109,122,93,130,78,158,59,198,44,249,33,306,25,422,18,517,17"/>
-<area shape="rect" id="Node000004" href="$sys__clock_8h_source.html" title=" " alt="" coords="222,80,314,107"/>
+<area shape="rect" id="Node000004" href="$sys__clock_8h.html" title="Реализация конфигурации системного времени" alt="" coords="222,80,314,107"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="519,34,330,80,328,75,517,28"/>
-<area shape="rect" id="Node000006" href="$uart_8h_source.html" title=" " alt="" coords="144,80,198,107"/>
+<area shape="rect" id="Node000006" href="$uart_8h.html" title="Конфигурация UART + настройка пинов для отладочного вывода" alt="" coords="144,80,198,107"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="518,28,386,49,213,82,212,77,385,43,518,23"/>
 <area shape="rect" id="Node000007" href="$can_8h.html" title="CAN&#45;интерфейс для отправки управляющих сообщений" alt="" coords="338,80,391,107"/>
 <area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="529,35,406,80,404,75,527,30"/>

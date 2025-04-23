@@ -10,8 +10,8 @@ var dir_111cd2f11cffd6d6d28d89ee0389ee9e =
     [ "main.h", "main_8h.html", null ],
     [ "settings.c", "settings_8c.html", null ],
     [ "settings.h", "settings_8h.html", "settings_8h" ],
-    [ "sys_clock.h", "sys__clock_8h_source.html", null ],
-    [ "uart.h", "uart_8h_source.html", null ],
+    [ "sys_clock.h", "sys__clock_8h.html", "sys__clock_8h" ],
+    [ "uart.h", "uart_8h.html", "uart_8h" ],
     [ "utils.c", "utils_8c.html", "utils_8c" ],
     [ "utils.h", "utils_8h.html", "utils_8h" ]
 ];
