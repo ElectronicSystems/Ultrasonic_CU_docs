@@ -5,5 +5,7 @@ var utils_8c =
     [ "predictHeight", "utils_8c.html#a5b6550a655d6a5105460fb1d696ca695", null ],
     [ "prioritizeLift", "utils_8c.html#ab9a47acbf7ba8d61c0e86c58e170b151", null ],
     [ "regulateHeight", "utils_8c.html#aa6006aeead6e70a897c4ce05b5b3388f", null ],
-    [ "smoothSpeed", "utils_8c.html#ab6132707cf583041db10df43f16c04e6", null ]
+    [ "smoothSpeed", "utils_8c.html#ab6132707cf583041db10df43f16c04e6", null ],
+    [ "previous_height", "utils_8c.html#a6a66b20b997aade0c61830544d78a775", null ],
+    [ "previous_pid", "utils_8c.html#a865c4767467074120c22985a199ce60b", null ]
 ];

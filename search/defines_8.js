@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['sensor_5fresponse_5fawait_5fms_0',['SENSOR_RESPONSE_AWAIT_MS',['../main_8c.html#adc6f1ff4a447a5fd22a368dbb781970d',1,'main.c']]],
-  ['sensor_5ftrigger_5fpriority_1',['SENSOR_TRIGGER_PRIORITY',['../settings_8h.html#a342b8257711027519c9dd9db671666f6',1,'settings.h']]],
-  ['smooth_5fdelta_2',['SMOOTH_DELTA',['../utils_8h.html#a1b0eae30655ec83b4271ace01d25cab4',1,'utils.h']]]
+  ['raw_5fdata_5fqueue_5fsize_0',['RAW_DATA_QUEUE_SIZE',['../settings_8h.html#a676783b08f3e15713919dbd0c838c081',1,'settings.h']]],
+  ['rx_5fbuffer_5fsize_1',['RX_BUFFER_SIZE',['../settings_8h.html#a739a2a1a0047c98ac1b18ecd25dac092',1,'settings.h']]]
 ];

@@ -175,22 +175,12 @@ Functions</h2></td></tr>
 <ul>
 <li>Данные размещаются в байтах 1 и 3</li>
 <li>Если PID &lt; 0: speed в байте 1, checksum в байте 3</li>
-<li>Если PID &gt;= 0: checksum в байте 1, speed в байте 3</li>
-</ul>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">standard_id</td><td>CAN ID (пример: 0x196) </td></tr>
-    <tr><td class="paramname">speed</td><td>Значение скорости (0-100) </td></tr>
-    <tr><td class="paramname">checksum</td><td>Контрольная сумма (255 - speed) </td></tr>
-    <tr><td class="paramname">pid</td><td>Управляющий сигнал (отрицательный = спуск) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Заполненная структура can_tx_message_type</dd></dl>
-<div class="fragment"><div class="line"><span class="comment">// Пример использования:</span></div>
+<li>Если PID &gt;= 0: checksum в байте 1, speed в байте 3 <div class="fragment"><div class="line"><span class="comment">// Пример использования:</span></div>
 <div class="line">can_tx_message_type msg = <a class="code hl_function" href="#ac77cc569b3615d51ea9a21ef57b73e2a">create_can_message</a>(0x196, 50, 205, -30);</div>
-<div class="ttc" id="acan_8c_html_ac77cc569b3615d51ea9a21ef57b73e2a"><div class="ttname"><a href="#ac77cc569b3615d51ea9a21ef57b73e2a">create_can_message</a></div><div class="ttdeci">can_tx_message_type create_can_message(uint16_t standard_id, uint8_t speed, uint8_t checksum, int16_t pid)</div><div class="ttdoc">Формирует CAN-сообщение с учетом направления (PID)</div><div class="ttdef"><b>Definition</b> can.c:45</div></div>
-</div><!-- fragment --> <div class="dynheader">
+<div class="ttc" id="acan_8c_html_ac77cc569b3615d51ea9a21ef57b73e2a"><div class="ttname"><a href="#ac77cc569b3615d51ea9a21ef57b73e2a">create_can_message</a></div><div class="ttdeci">can_tx_message_type create_can_message(uint16_t standard_id, uint8_t speed, uint8_t checksum, int16_t pid)</div><div class="ttdoc">Формирует CAN-сообщение с учетом направления (PID)</div><div class="ttdef"><b>Definition</b> can.c:38</div></div>
+</div><!-- fragment --> </li>
+</ul>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="can_8c_ac77cc569b3615d51ea9a21ef57b73e2a_icgraph.png" border="0" usemap="#acan_8c_ac77cc569b3615d51ea9a21ef57b73e2a_icgraph" alt=""/></div>
