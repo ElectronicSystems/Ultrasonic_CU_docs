@@ -1,0 +1,7 @@
+<map id="user/can.h" name="user/can.h">
+<area shape="rect" id="Node000001" title="CAN&#45;интерфейс для отправки управляющих сообщений" alt="" coords="60,5,142,32"/>
+<area shape="rect" id="Node000002" href="$can_8c.html" title="Реализация формирования CAN&#45;сообщений" alt="" coords="5,80,88,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,46,58,81,54,78,80,43"/>
+<area shape="rect" id="Node000003" href="$main_8c.html" title="Главный модуль системы управления высотой" alt="" coords="111,80,200,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="122,43,149,78,144,81,118,46"/>
+</map>

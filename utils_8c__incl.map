@@ -1,0 +1,11 @@
+<map id="user/utils.c" name="user/utils.c">
+<area shape="rect" id="Node000001" title="Реализация PID&#45;регулятора высоты" alt="" coords="80,5,165,32"/>
+<area shape="rect" id="Node000002" href="$utils_8h.html" title="Библиотека PID&#45;регулятора высоты с прогнозированием" alt="" coords="94,80,151,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,33,125,64,120,64,120,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,155,67,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="109,109,64,147,61,143,106,105"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="91,155,154,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="125,107,125,139,120,139,120,107"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="179,155,261,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="141,105,193,143,190,148,138,109"/>
+</map>

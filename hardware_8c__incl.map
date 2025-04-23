@@ -1,0 +1,7 @@
+<map id="user/hardware.c" name="user/hardware.c">
+<area shape="rect" id="Node000001" title="Реализация функций аппаратной конфигурации" alt="" coords="5,5,120,32"/>
+<area shape="rect" id="Node000002" href="$hardware_8h.html" title="Конфигурация аппаратных периферийных устройств" alt="" coords="20,80,105,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,33,65,64,60,64,60,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="21,155,104,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="65,107,65,139,60,139,60,107"/>
+</map>

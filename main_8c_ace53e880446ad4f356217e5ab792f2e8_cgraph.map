@@ -1,0 +1,15 @@
+<map id="ProcessedValue_Task" name="ProcessedValue_Task">
+<area shape="rect" id="Node000001" title="Задача вычисления скользящего среднего" alt="" coords="5,107,156,133"/>
+<area shape="rect" id="Node000002" href="$utils_8c.html#aa6006aeead6e70a897c4ce05b5b3388f" title="Основная функция PID&#45;регулятора" alt="" coords="204,107,309,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,117,188,117,188,123,156,123"/>
+<area shape="rect" id="Node000003" href="$utils_8c.html#ac69a16f35e9773a5a54230597a03c020" title="Применяет зону нечувствительности" alt="" coords="376,5,488,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="270,104,308,73,356,42,368,36,370,41,358,46,311,78,274,109"/>
+<area shape="rect" id="Node000004" href="$utils_8c.html#afb5b4b0af7b85810a055d6c2ecb4b56c" title="Вычисляет P&#45;составляющую с разными коэффициентами" alt="" coords="357,56,507,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="305,103,368,85,369,90,306,109"/>
+<area shape="rect" id="Node000005" href="$utils_8c.html#a5b6550a655d6a5105460fb1d696ca695" title="Прогнозирует высоту на следующем шаге" alt="" coords="383,107,481,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="310,117,368,117,368,123,310,123"/>
+<area shape="rect" id="Node000006" href="$utils_8c.html#ab9a47acbf7ba8d61c0e86c58e170b151" title="Добавляет усиление при подъеме" alt="" coords="388,157,476,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="306,131,373,151,372,156,305,137"/>
+<area shape="rect" id="Node000007" href="$utils_8c.html#ab6132707cf583041db10df43f16c04e6" title="Ограничивает скорость изменения сигнала" alt="" coords="382,208,483,235"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="274,131,311,162,358,194,370,199,368,204,356,198,308,167,270,136"/>
+</map>

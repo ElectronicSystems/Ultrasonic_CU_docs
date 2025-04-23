@@ -1,0 +1,9 @@
+<map id="smoothSpeed" name="smoothSpeed">
+<area shape="rect" id="Node000001" title="Ограничивает скорость изменения сигнала" alt="" coords="454,5,556,32"/>
+<area shape="rect" id="Node000002" href="$utils_8c.html#aa6006aeead6e70a897c4ce05b5b3388f" title="Основная функция PID&#45;регулятора" alt="" coords="301,5,406,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="438,21,407,21,407,16,438,16"/>
+<area shape="rect" id="Node000003" href="$main_8c.html#ace53e880446ad4f356217e5ab792f2e8" title="Задача вычисления скользящего среднего" alt="" coords="103,5,253,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="285,21,253,21,253,16,285,16"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Точка входа в программу" alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
