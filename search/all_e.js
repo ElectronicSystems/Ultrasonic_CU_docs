@@ -1,13 +1,8 @@
 var searchData=
 [
-  ['transistor1_5fh_0',['Transistor1_H',['../hardware_8h.html#a5bf846f60e3f7a3ca1ac92db9d0ac28e',1,'hardware.h']]],
-  ['transistor1_5fl_1',['Transistor1_L',['../hardware_8h.html#a4a478fb8b9d5698f23e2f50c46feade5',1,'hardware.h']]],
-  ['transistor3_5fh_2',['Transistor3_H',['../hardware_8h.html#ac62067fb1061a6ed078ba70404ee0f28',1,'hardware.h']]],
-  ['transistor3_5fl_3',['Transistor3_L',['../hardware_8h.html#ac1e76eba8791c6f8f4eaac10b258f8e5',1,'hardware.h']]],
-  ['trigger1_5fh_4',['Trigger1_H',['../hardware_8h.html#afc74577292644c1a00e23d0a11f11ce0',1,'hardware.h']]],
-  ['trigger1_5fl_5',['Trigger1_L',['../hardware_8h.html#a99c74a7197a70906e59fbe2bf9f41025',1,'hardware.h']]],
-  ['trigger3_5fh_6',['Trigger3_H',['../hardware_8h.html#a1056e9cb78663c7dfd77a961d106b60d',1,'hardware.h']]],
-  ['trigger3_5fl_7',['Trigger3_L',['../hardware_8h.html#a0e280478468e4aeda43e42e2e8e92674',1,'hardware.h']]],
-  ['trigger_5fsensors_8',['trigger_sensors',['../main_8c.html#a42fd5f4a43beae79d0fd79b73e9262c5',1,'main.c']]],
-  ['trigger_5ftime_9',['trigger_time',['../struct_sensor_state__t.html#a165b0f9e3b77921222a37ccbad4befee',1,'SensorState_t']]]
+  ['uart_5fprocess_5fpriority_0',['UART_PROCESS_PRIORITY',['../settings_8h.html#a403bd7661f73c56f7e5006a7e3314f78',1,'settings.h']]],
+  ['uarts_5finstances_1',['UARTs_instances',['../main_8c.html#a57cffa32ad8f5a74eea06ca009a11fa8',1,'main.c']]],
+  ['usart_5fconfiguration_2',['usart_configuration',['../main_8c.html#a111a69a28ad875b06c82a8712519b243',1,'main.c']]],
+  ['utils_2ec_3',['utils.c',['../utils_8c.html',1,'']]],
+  ['utils_2eh_4',['utils.h',['../utils_8h.html',1,'']]]
 ];

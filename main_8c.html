@@ -258,13 +258,13 @@ Variables</h2></td></tr>
 uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>SET_HEIGHT</b> = 200</td></tr>
 <tr class="memdesc:affc43c856f3327fc73c845b3c4596dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установленная высота (целевое значение) <br /></td></tr>
 <tr class="separator:affc43c856f3327fc73c845b3c4596dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a327eec4556063af5d1ce079864c85447" id="r_a327eec4556063af5d1ce079864c85447"><td class="memItemLeft" align="right" valign="top"><a id="a327eec4556063af5d1ce079864c85447" name="a327eec4556063af5d1ce079864c85447"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx_buffers</b> [<a class="el" href="settings_8h.html#aa8f8564a6944121058f4c4278894ead1">NUMBER_OF_SENSORS</a>][<a class="el" href="settings_8h.html#a739a2a1a0047c98ac1b18ecd25dac092">RX_BUFFER_SIZE</a>]</td></tr>
-<tr class="memdesc:a327eec4556063af5d1ce079864c85447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Буферы для DMA приема данных <br /></td></tr>
-<tr class="separator:a327eec4556063af5d1ce079864c85447"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b00115589ff6c8044f63bc68beebe26" id="r_a4b00115589ff6c8044f63bc68beebe26"><td class="memItemLeft" align="right" valign="top">volatile uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b00115589ff6c8044f63bc68beebe26">dma_rx_done</a> [<a class="el" href="settings_8h.html#aa8f8564a6944121058f4c4278894ead1">NUMBER_OF_SENSORS</a>]</td></tr>
-<tr class="memdesc:a4b00115589ff6c8044f63bc68beebe26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаги завершения DMA приема  <br /></td></tr>
-<tr class="separator:a4b00115589ff6c8044f63bc68beebe26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d5c665804561652155e36a8c0ab82f" id="r_a98d5c665804561652155e36a8c0ab82f"><td class="memItemLeft" align="right" valign="top"><a id="a98d5c665804561652155e36a8c0ab82f" name="a98d5c665804561652155e36a8c0ab82f"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx_buffers</b> [2][4]</td></tr>
+<tr class="memdesc:a98d5c665804561652155e36a8c0ab82f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Буферы для DMA приема данных <br /></td></tr>
+<tr class="separator:a98d5c665804561652155e36a8c0ab82f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31eaa43e9c440fc947d616653dc7e5c4" id="r_a31eaa43e9c440fc947d616653dc7e5c4"><td class="memItemLeft" align="right" valign="top">volatile uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31eaa43e9c440fc947d616653dc7e5c4">dma_rx_done</a> [2]</td></tr>
+<tr class="memdesc:a31eaa43e9c440fc947d616653dc7e5c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаги завершения DMA приема  <br /></td></tr>
+<tr class="separator:a31eaa43e9c440fc947d616653dc7e5c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a483ddcb7fafc3ecc5bd2514f45414195" id="r_a483ddcb7fafc3ecc5bd2514f45414195"><td class="memItemLeft" align="right" valign="top"><a id="a483ddcb7fafc3ecc5bd2514f45414195" name="a483ddcb7fafc3ecc5bd2514f45414195"></a>
 volatile uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>dma_ready_count</b> = 0</td></tr>
 <tr class="memdesc:a483ddcb7fafc3ecc5bd2514f45414195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Счетчик готовых DMA каналов <br /></td></tr>
@@ -289,12 +289,12 @@ EventGroupHandle_t&#160;</td><td class="memItemRight" valign="bottom"><b>xCanSta
 TaskHandle_t&#160;</td><td class="memItemRight" valign="bottom"><b>xSensorTestHandle</b> = NULL</td></tr>
 <tr class="memdesc:ab4f456f046dc1e7dcd3c2ab1b593ecbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Хэндл задачи датчиков <br /></td></tr>
 <tr class="separator:ab4f456f046dc1e7dcd3c2ab1b593ecbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c2219eec3a5ef94a563588c2bc24358" id="r_a8c2219eec3a5ef94a563588c2bc24358"><td class="memItemLeft" align="right" valign="top">usart_type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c2219eec3a5ef94a563588c2bc24358">UARTs_instances</a> [<a class="el" href="settings_8h.html#aa8f8564a6944121058f4c4278894ead1">NUMBER_OF_SENSORS</a>]</td></tr>
-<tr class="memdesc:a8c2219eec3a5ef94a563588c2bc24358"><td class="mdescLeft">&#160;</td><td class="mdescRight">Массивы для работы с USART.  <br /></td></tr>
-<tr class="separator:a8c2219eec3a5ef94a563588c2bc24358"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e329990f5ed457675bbc0b80ef64b5c" id="r_a8e329990f5ed457675bbc0b80ef64b5c"><td class="memItemLeft" align="right" valign="top">dma_channel_type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e329990f5ed457675bbc0b80ef64b5c">DMA_channels</a> [<a class="el" href="settings_8h.html#aa8f8564a6944121058f4c4278894ead1">NUMBER_OF_SENSORS</a>]</td></tr>
-<tr class="memdesc:a8e329990f5ed457675bbc0b80ef64b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Массивы для работы с DMA.  <br /></td></tr>
-<tr class="separator:a8e329990f5ed457675bbc0b80ef64b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57cffa32ad8f5a74eea06ca009a11fa8" id="r_a57cffa32ad8f5a74eea06ca009a11fa8"><td class="memItemLeft" align="right" valign="top">usart_type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57cffa32ad8f5a74eea06ca009a11fa8">UARTs_instances</a> [2]</td></tr>
+<tr class="memdesc:a57cffa32ad8f5a74eea06ca009a11fa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Массивы для работы с USART.  <br /></td></tr>
+<tr class="separator:a57cffa32ad8f5a74eea06ca009a11fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ac5d789e75518c2ba19d7979c0106d6" id="r_a6ac5d789e75518c2ba19d7979c0106d6"><td class="memItemLeft" align="right" valign="top">dma_channel_type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ac5d789e75518c2ba19d7979c0106d6">DMA_channels</a> [2]</td></tr>
+<tr class="memdesc:a6ac5d789e75518c2ba19d7979c0106d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Массивы для работы с DMA.  <br /></td></tr>
+<tr class="separator:a6ac5d789e75518c2ba19d7979c0106d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e080df031dd1eb8eab7908ace65e573" id="r_a4e080df031dd1eb8eab7908ace65e573"><td class="memItemLeft" align="right" valign="top"><a id="a4e080df031dd1eb8eab7908ace65e573" name="a4e080df031dd1eb8eab7908ace65e573"></a>
 <a class="el" href="struct_sensor_state__t.html">SensorState_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>xSensorState</b></td></tr>
 <tr class="memdesc:a4e080df031dd1eb8eab7908ace65e573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Глобальное состояние датчиков <br /></td></tr>
@@ -303,9 +303,9 @@ TaskHandle_t&#160;</td><td class="memItemRight" valign="bottom"><b>xSensorTestHa
 QueueHandle_t&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessedDataQueue</b></td></tr>
 <tr class="memdesc:ae168ff74cab0dec30d3ebc1368103a00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очередь обработанных данных <br /></td></tr>
 <tr class="separator:ae168ff74cab0dec30d3ebc1368103a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03890f0c0dfb80c664254855bb615f8e" id="r_a03890f0c0dfb80c664254855bb615f8e"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03890f0c0dfb80c664254855bb615f8e">movingAverageArray</a> [<a class="el" href="#a9d9c640471e771d758f39d41de308f97">MOVING_AVERAGE_WINDOW_SIZE</a>]</td></tr>
-<tr class="memdesc:a03890f0c0dfb80c664254855bb615f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Буфер усреднения  <br /></td></tr>
-<tr class="separator:a03890f0c0dfb80c664254855bb615f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab98baeec392d5d1cdbb7d9cb883a15b4" id="r_ab98baeec392d5d1cdbb7d9cb883a15b4"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab98baeec392d5d1cdbb7d9cb883a15b4">movingAverageArray</a> [4]</td></tr>
+<tr class="memdesc:ab98baeec392d5d1cdbb7d9cb883a15b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Буфер усреднения  <br /></td></tr>
+<tr class="separator:ab98baeec392d5d1cdbb7d9cb883a15b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e2319f73c7451c61eaa07aded809ded" id="r_a7e2319f73c7451c61eaa07aded809ded"><td class="memItemLeft" align="right" valign="top"><a id="a7e2319f73c7451c61eaa07aded809ded" name="a7e2319f73c7451c61eaa07aded809ded"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>maCount</b> = 0</td></tr>
 <tr class="memdesc:a7e2319f73c7451c61eaa07aded809ded"><td class="mdescLeft">&#160;</td><td class="mdescRight">Счетчик значений в буфере <br /></td></tr>
@@ -788,14 +788,14 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a8e329990f5ed457675bbc0b80ef64b5c" name="a8e329990f5ed457675bbc0b80ef64b5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e329990f5ed457675bbc0b80ef64b5c">&#9670;&#160;</a></span>DMA_channels</h2>
+<a id="a6ac5d789e75518c2ba19d7979c0106d6" name="a6ac5d789e75518c2ba19d7979c0106d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ac5d789e75518c2ba19d7979c0106d6">&#9670;&#160;</a></span>DMA_channels</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">dma_channel_type* DMA_channels[<a class="el" href="settings_8h.html#aa8f8564a6944121058f4c4278894ead1">NUMBER_OF_SENSORS</a>]</td>
+          <td class="memname">dma_channel_type* DMA_channels[2]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -808,14 +808,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a4b00115589ff6c8044f63bc68beebe26" name="a4b00115589ff6c8044f63bc68beebe26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b00115589ff6c8044f63bc68beebe26">&#9670;&#160;</a></span>dma_rx_done</h2>
+<a id="a31eaa43e9c440fc947d616653dc7e5c4" name="a31eaa43e9c440fc947d616653dc7e5c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31eaa43e9c440fc947d616653dc7e5c4">&#9670;&#160;</a></span>dma_rx_done</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile uint8_t dma_rx_done[<a class="el" href="settings_8h.html#aa8f8564a6944121058f4c4278894ead1">NUMBER_OF_SENSORS</a>]</td>
+          <td class="memname">volatile uint8_t dma_rx_done[2]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -827,14 +827,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a03890f0c0dfb80c664254855bb615f8e" name="a03890f0c0dfb80c664254855bb615f8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03890f0c0dfb80c664254855bb615f8e">&#9670;&#160;</a></span>movingAverageArray</h2>
+<a id="ab98baeec392d5d1cdbb7d9cb883a15b4" name="ab98baeec392d5d1cdbb7d9cb883a15b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab98baeec392d5d1cdbb7d9cb883a15b4">&#9670;&#160;</a></span>movingAverageArray</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t movingAverageArray[<a class="el" href="#a9d9c640471e771d758f39d41de308f97">MOVING_AVERAGE_WINDOW_SIZE</a>]</td>
+          <td class="memname">uint16_t movingAverageArray[4]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -846,14 +846,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a8c2219eec3a5ef94a563588c2bc24358" name="a8c2219eec3a5ef94a563588c2bc24358"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c2219eec3a5ef94a563588c2bc24358">&#9670;&#160;</a></span>UARTs_instances</h2>
+<a id="a57cffa32ad8f5a74eea06ca009a11fa8" name="a57cffa32ad8f5a74eea06ca009a11fa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57cffa32ad8f5a74eea06ca009a11fa8">&#9670;&#160;</a></span>UARTs_instances</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">usart_type* UARTs_instances[<a class="el" href="settings_8h.html#aa8f8564a6944121058f4c4278894ead1">NUMBER_OF_SENSORS</a>]</td>
+          <td class="memname">usart_type* UARTs_instances[2]</td>
         </tr>
       </table>
 </div><div class="memdoc">

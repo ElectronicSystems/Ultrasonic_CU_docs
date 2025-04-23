@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['kp_5fdown_0',['KP_DOWN',['../utils_8h.html#a7ca40ad93562b3ecabebd64d836834ab',1,'utils.h']]],
-  ['kp_5fup_1',['KP_UP',['../utils_8h.html#ad94e76d87da104c9138f202b3aaa161a',1,'utils.h']]]
+  ['lift_5fbonus_0',['LIFT_BONUS',['../utils_8h.html#a3e9eaa92b73b653d834d420660029d83',1,'utils.h']]]
 ];
