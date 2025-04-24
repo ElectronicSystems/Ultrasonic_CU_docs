@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title="Точка входа в программу" alt="" coords="5,259,55,285"/>
 <area shape="rect" id="Node000002" href="$main_8c.html#a6b0eb2f968bdaee862215e6042fe4d9a" title="Задача отправки CAN&#45;сообщений" alt="" coords="118,56,238,83"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="39,257,156,93,160,96,43,260"/>
-<area shape="rect" id="Node000005" href="$main_8c.html#affc332be6dccbf051049519a75b1d637" title="Основная функция инициализации" alt="" coords="129,208,227,235"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a47191dfa6786da2498eb49ae28f8d361" title="Основная функция инициализации" alt="" coords="129,208,227,235"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="54,261,122,238,123,243,56,266"/>
 <area shape="rect" id="Node000012" href="$main_8c.html#ace53e880446ad4f356217e5ab792f2e8" title="Задача вычисления скользящего среднего" alt="" coords="103,309,253,336"/>
 <area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="56,278,123,301,122,306,54,283"/>

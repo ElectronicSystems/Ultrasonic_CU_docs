@@ -231,9 +231,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DMA1_Channel5_IRQHand
 <tr class="memitem:a085b41c14076b89a6bb98a4517f20bb2" id="r_a085b41c14076b89a6bb98a4517f20bb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a085b41c14076b89a6bb98a4517f20bb2">CAN_send</a> (can_type *can_x, can_tx_message_type *tx_message_struct)</td></tr>
 <tr class="memdesc:a085b41c14076b89a6bb98a4517f20bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Безопасная отправка сообщения в CAN шину  <br /></td></tr>
 <tr class="separator:a085b41c14076b89a6bb98a4517f20bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affc332be6dccbf051049519a75b1d637" id="r_affc332be6dccbf051049519a75b1d637"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affc332be6dccbf051049519a75b1d637">hardware_init</a> ()</td></tr>
-<tr class="memdesc:affc332be6dccbf051049519a75b1d637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Основная функция инициализации  <br /></td></tr>
-<tr class="separator:affc332be6dccbf051049519a75b1d637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47191dfa6786da2498eb49ae28f8d361" id="r_a47191dfa6786da2498eb49ae28f8d361"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47191dfa6786da2498eb49ae28f8d361">hardware_init</a> (void)</td></tr>
+<tr class="memdesc:a47191dfa6786da2498eb49ae28f8d361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Основная функция инициализации  <br /></td></tr>
+<tr class="separator:a47191dfa6786da2498eb49ae28f8d361"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42fd5f4a43beae79d0fd79b73e9262c5" id="r_a42fd5f4a43beae79d0fd79b73e9262c5"><td class="memItemLeft" align="right" valign="top"><a id="a42fd5f4a43beae79d0fd79b73e9262c5" name="a42fd5f4a43beae79d0fd79b73e9262c5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>trigger_sensors</b> (void)</td></tr>
 <tr class="memdesc:a42fd5f4a43beae79d0fd79b73e9262c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Генерация триггерного импульса для обоих датчиков <br /></td></tr>
@@ -316,12 +316,6 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>maSum</b> = 0</td
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Главный модуль системы управления высотой </p>
-<ul>
-<li>Инициализация аппаратуры</li>
-<li>Создание задач FreeRTOS</li>
-<li>Управление DMA для датчиков</li>
-<li>CAN-коммуникация</li>
-</ul>
 <div class="dotgraph">
 <img src="dot_inline_dotgraph_6.png" alt="dot_inline_dotgraph_6.png" border="0" usemap="#dot_inline_dotgraph_6.map"/>
 </div>
@@ -412,10 +406,21 @@ Here is the caller graph for this function:</div>
 <p>Задача отправки CAN-сообщений </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pvParameters</td><td>Параметры задачи (не используются) </td></tr>
+    <tr><td class="paramname">pvParameters</td><td>Параметры задачи (не используются)</td></tr>
   </table>
   </dd>
 </dl>
+<p>Выполняет:</p><ul>
+<li>Создаем speed и checksum</li>
+</ul>
+<ol type="1">
+<li>Если CAN_BLOCK_BIT=0, то берем я pid из очереди xQueuePeek, иначе не перезаписываем speed и checksum, pid = 0.</li>
+<li>Если pid есть в очереди, то перезаписываем speed и checksum на основании pid.</li>
+</ol>
+<ul>
+<li>Отправляем сообщение в CAN шину</li>
+<li>Ждем CAN_SEND_PERIOD_MS </li>
+</ul>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -513,7 +518,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Инициализация DMA для UART приема" alt="" coords="428,5,546,32"/>
 <area shape="rect" href="main_8c.html#a111a69a28ad875b06c82a8712519b243" title="Инициализация прерываний и UART интерфейсов для всех датчиков" alt="" coords="249,5,380,32"/>
 <area shape="poly" title=" " alt="" coords="412,21,381,21,381,16,412,16"/>
-<area shape="rect" href="main_8c.html#affc332be6dccbf051049519a75b1d637" title="Основная функция инициализации" alt="" coords="103,5,201,32"/>
+<area shape="rect" href="main_8c.html#a47191dfa6786da2498eb49ae28f8d361" title="Основная функция инициализации" alt="" coords="103,5,201,32"/>
 <area shape="poly" title=" " alt="" coords="234,21,201,21,201,16,234,16"/>
 <area shape="rect" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Точка входа в программу" alt="" coords="5,5,55,32"/>
 <area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
@@ -522,8 +527,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="affc332be6dccbf051049519a75b1d637" name="affc332be6dccbf051049519a75b1d637"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affc332be6dccbf051049519a75b1d637">&#9670;&#160;</a></span>hardware_init()</h2>
+<a id="a47191dfa6786da2498eb49ae28f8d361" name="a47191dfa6786da2498eb49ae28f8d361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47191dfa6786da2498eb49ae28f8d361">&#9670;&#160;</a></span>hardware_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -531,7 +536,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void hardware_init </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -542,8 +547,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="main_8c_affc332be6dccbf051049519a75b1d637_cgraph.png" border="0" usemap="#amain_8c_affc332be6dccbf051049519a75b1d637_cgraph" alt=""/></div>
-<map name="amain_8c_affc332be6dccbf051049519a75b1d637_cgraph" id="amain_8c_affc332be6dccbf051049519a75b1d637_cgraph">
+<div class="center"><img src="main_8c_a47191dfa6786da2498eb49ae28f8d361_cgraph.png" border="0" usemap="#amain_8c_a47191dfa6786da2498eb49ae28f8d361_cgraph" alt=""/></div>
+<map name="amain_8c_a47191dfa6786da2498eb49ae28f8d361_cgraph" id="amain_8c_a47191dfa6786da2498eb49ae28f8d361_cgraph">
 <area shape="rect" title="Основная функция инициализации" alt="" coords="5,81,104,108"/>
 <area shape="rect" href="hardware_8c.html#a5ca92ddc8d158b17bbb2e1028ba762ed" title="Настраивает CAN&#45;интерфейс" alt="" coords="175,5,260,32"/>
 <area shape="poly" title=" " alt="" coords="79,78,151,42,164,36,166,41,153,46,81,83"/>
@@ -562,8 +567,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="main_8c_affc332be6dccbf051049519a75b1d637_icgraph.png" border="0" usemap="#amain_8c_affc332be6dccbf051049519a75b1d637_icgraph" alt=""/></div>
-<map name="amain_8c_affc332be6dccbf051049519a75b1d637_icgraph" id="amain_8c_affc332be6dccbf051049519a75b1d637_icgraph">
+<div class="center"><img src="main_8c_a47191dfa6786da2498eb49ae28f8d361_icgraph.png" border="0" usemap="#amain_8c_a47191dfa6786da2498eb49ae28f8d361_icgraph" alt=""/></div>
+<map name="amain_8c_a47191dfa6786da2498eb49ae28f8d361_icgraph" id="amain_8c_a47191dfa6786da2498eb49ae28f8d361_icgraph">
 <area shape="rect" title="Основная функция инициализации" alt="" coords="103,5,201,32"/>
 <area shape="rect" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Точка входа в программу" alt="" coords="5,5,55,32"/>
 <area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
@@ -603,7 +608,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Инициализация UART&#45;периферии" alt="" coords="428,5,496,32"/>
 <area shape="rect" href="main_8c.html#a111a69a28ad875b06c82a8712519b243" title="Инициализация прерываний и UART интерфейсов для всех датчиков" alt="" coords="249,5,380,32"/>
 <area shape="poly" title=" " alt="" coords="413,21,381,21,381,16,413,16"/>
-<area shape="rect" href="main_8c.html#affc332be6dccbf051049519a75b1d637" title="Основная функция инициализации" alt="" coords="103,5,201,32"/>
+<area shape="rect" href="main_8c.html#a47191dfa6786da2498eb49ae28f8d361" title="Основная функция инициализации" alt="" coords="103,5,201,32"/>
 <area shape="poly" title=" " alt="" coords="234,21,201,21,201,16,234,16"/>
 <area shape="rect" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Точка входа в программу" alt="" coords="5,5,55,32"/>
 <area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
@@ -641,7 +646,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" title="Точка входа в программу" alt="" coords="5,259,55,285"/>
 <area shape="rect" href="main_8c.html#a6b0eb2f968bdaee862215e6042fe4d9a" title="Задача отправки CAN&#45;сообщений" alt="" coords="118,56,238,83"/>
 <area shape="poly" title=" " alt="" coords="39,257,156,93,160,96,43,260"/>
-<area shape="rect" href="main_8c.html#affc332be6dccbf051049519a75b1d637" title="Основная функция инициализации" alt="" coords="129,208,227,235"/>
+<area shape="rect" href="main_8c.html#a47191dfa6786da2498eb49ae28f8d361" title="Основная функция инициализации" alt="" coords="129,208,227,235"/>
 <area shape="poly" title=" " alt="" coords="54,261,122,238,123,243,56,266"/>
 <area shape="rect" href="main_8c.html#ace53e880446ad4f356217e5ab792f2e8" title="Задача вычисления скользящего среднего" alt="" coords="103,309,253,336"/>
 <area shape="poly" title=" " alt="" coords="56,278,123,301,122,306,54,283"/>
@@ -702,10 +707,16 @@ Here is the call graph for this function:</div>
 <p>Задача вычисления скользящего среднего </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pvParameters</td><td>Параметры задачи (не используются) </td></tr>
+    <tr><td class="paramname">pvParameters</td><td>Параметры задачи (не используются)</td></tr>
   </table>
   </dd>
 </dl>
+<p>Выполняет:</p><ul>
+<li>Берет из очереди ProcessedDataQueue значение и пишет его в receivedValue.</li>
+<li>Значение помещается в стек First In Last Out (скользящее среднее). Размер стека - MOVING_AVERAGE_WINDOW_SIZE.</li>
+<li>Вычисляет значение pid функциями из модуля utils.</li>
+<li>Передает значение pid в очередь PIDQueue. </li>
+</ul>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -757,10 +768,17 @@ Here is the caller graph for this function:</div>
 <p>Задача обработки данных датчиков </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pvParameters</td><td>Параметры задачи (не используются) </td></tr>
+    <tr><td class="paramname">pvParameters</td><td>Параметры задачи (не используются)</td></tr>
   </table>
   </dd>
 </dl>
+<p>Выполняет:</p><ul>
+<li>Триггерный сигнал на датчики.</li>
+<li>По флагу dma_rx_done определяет что данные пришли из DMA.</li>
+<li>Вычисляет значение distances[i] в цикле.</li>
+<li>Управляет флагом CAN_BLOCK_BIT, он необходим чтобы слать в посылку нули при условии что хотя бы один датчик не дает данные.</li>
+<li>Если все датчики ответили то среднее значение с двух датчиков уходит в очередь ProcessedDataQueue </li>
+</ul>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

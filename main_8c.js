@@ -13,7 +13,7 @@ var main_8c =
     [ "DMA1_Channel5_IRQHandler", "main_8c.html#abd16b3391557c4a3a8020d675e2c452f", null ],
     [ "DMA_reset", "main_8c.html#a8c5e73e536cd83298dc7065b5b685ce2", null ],
     [ "dma_uart_rx_init", "main_8c.html#a56be6912a8e4c0aea6034849452e59df", null ],
-    [ "hardware_init", "main_8c.html#affc332be6dccbf051049519a75b1d637", null ],
+    [ "hardware_init", "main_8c.html#a47191dfa6786da2498eb49ae28f8d361", null ],
     [ "init_uart", "main_8c.html#aafb5a28a3b7c8e97646b64560fccc1d2", null ],
     [ "main", "main_8c.html#a840291bc02cba5474a4cb46a9b9566fe", null ],
     [ "ProcessedValue_Task", "main_8c.html#ace53e880446ad4f356217e5ab792f2e8", null ],
