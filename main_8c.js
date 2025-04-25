@@ -4,7 +4,6 @@ var main_8c =
     [ "CAN_BLOCK_BIT", "main_8c.html#a815a330a0a82f7d456c98b82f65cae22", null ],
     [ "CAN_ID", "main_8c.html#a1aa9f4ad6589c2013d008a60bd73dfba", null ],
     [ "CAN_SEND_PERIOD_MS", "main_8c.html#a70ea6ef0d649786ea63375b0e5a9bb82", null ],
-    [ "debug_printf", "main_8c.html#ad4d0181076bcf51c58cf91540abac61e", null ],
     [ "MOVING_AVERAGE_WINDOW_SIZE", "main_8c.html#a9d9c640471e771d758f39d41de308f97", null ],
     [ "SENSOR_RESPONSE_AWAIT_MS", "main_8c.html#adc6f1ff4a447a5fd22a368dbb781970d", null ],
     [ "CAN_send", "main_8c.html#a085b41c14076b89a6bb98a4517f20bb2", null ],
@@ -18,6 +17,7 @@ var main_8c =
     [ "main", "main_8c.html#a840291bc02cba5474a4cb46a9b9566fe", null ],
     [ "ProcessedValue_Task", "main_8c.html#ace53e880446ad4f356217e5ab792f2e8", null ],
     [ "SensorWorking_Task", "main_8c.html#a64e0ea8aad7e1e83ea272f832e1d1203", null ],
+    [ "to_SensorWorkingTask", "main_8c.html#a0be49d1d43314eb4a1bf10c80bc54c32", null ],
     [ "trigger_sensors", "main_8c.html#a42fd5f4a43beae79d0fd79b73e9262c5", null ],
     [ "usart_configuration", "main_8c.html#a111a69a28ad875b06c82a8712519b243", null ],
     [ "DMA_channels", "main_8c.html#a6ac5d789e75518c2ba19d7979c0106d6", null ],
@@ -34,6 +34,6 @@ var main_8c =
     [ "UARTs_instances", "main_8c.html#a57cffa32ad8f5a74eea06ca009a11fa8", null ],
     [ "xCanStatusFlags", "main_8c.html#a68ebf67a4f36940d5f31931d455b679a", null ],
     [ "xSensorState", "main_8c.html#a4e080df031dd1eb8eab7908ace65e573", null ],
-    [ "xSensorTestHandle", "main_8c.html#ab4f456f046dc1e7dcd3c2ab1b593ecbd", null ],
+    [ "xSensorWorkingHandle", "main_8c.html#a7537a2d39a799d60dc88958daab52ffa", null ],
     [ "xStateMutex", "main_8c.html#a8e3db4eced3619cc280124482a688aed", null ]
 ];

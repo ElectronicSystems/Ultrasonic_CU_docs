@@ -109,7 +109,7 @@ $(function(){initNavTree('can_8h.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
-<p>CAN-интерфейс для отправки управляющих сообщений  
+<p>CAN interface for control messages.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;at32f413.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -117,7 +117,7 @@ Include dependency graph for can.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="can_8h__incl.png" border="0" usemap="#auser_2can_8h" alt=""/></div>
 <map name="auser_2can_8h" id="auser_2can_8h">
-<area shape="rect" title="CAN&#45;интерфейс для отправки управляющих сообщений" alt="" coords="5,5,88,32"/>
+<area shape="rect" title="CAN interface for control messages." alt="" coords="5,5,88,32"/>
 <area shape="rect" title=" " alt="" coords="5,80,88,107"/>
 <area shape="poly" title=" " alt="" coords="49,33,49,64,44,64,44,33"/>
 </map>
@@ -127,7 +127,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="can_8h__dep__incl.png" border="0" usemap="#auser_2can_8hdep" alt=""/></div>
 <map name="auser_2can_8hdep" id="auser_2can_8hdep">
-<area shape="rect" title="CAN&#45;интерфейс для отправки управляющих сообщений" alt="" coords="60,5,142,32"/>
+<area shape="rect" title="CAN interface for control messages." alt="" coords="60,5,142,32"/>
 <area shape="rect" href="can_8c.html" title="Реализация формирования CAN&#45;сообщений" alt="" coords="5,80,88,107"/>
 <area shape="poly" title=" " alt="" coords="84,46,58,81,54,78,80,43"/>
 <area shape="rect" href="main_8c.html" title="Главный модуль системы управления высотой" alt="" coords="111,80,200,107"/>
@@ -140,16 +140,11 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ac77cc569b3615d51ea9a21ef57b73e2a" id="r_ac77cc569b3615d51ea9a21ef57b73e2a"><td class="memItemLeft" align="right" valign="top">can_tx_message_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac77cc569b3615d51ea9a21ef57b73e2a">create_can_message</a> (uint16_t standard_id, uint8_t speed, uint8_t checksum, int16_t pid)</td></tr>
-<tr class="memdesc:ac77cc569b3615d51ea9a21ef57b73e2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создает CAN-сообщение для управления устройством  <br /></td></tr>
+<tr class="memdesc:ac77cc569b3615d51ea9a21ef57b73e2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates CAN message for device control.  <br /></td></tr>
 <tr class="separator:ac77cc569b3615d51ea9a21ef57b73e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>CAN-интерфейс для отправки управляющих сообщений </p>
-<ul>
-<li>Поддержка стандартных CAN ID (11-бит)</li>
-<li>Формирование сообщений с проверкой целостности</li>
-<li>Настройка DLC и типа фрейма</li>
-</ul>
+<div class="textblock"><p>CAN interface for control messages. </p>
 <div class="dotgraph">
 <img src="dot_inline_dotgraph_2.png" alt="dot_inline_dotgraph_2.png" border="0" usemap="#dot_inline_dotgraph_2.map"/>
 </div>
@@ -183,22 +178,21 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Создает CAN-сообщение для управления устройством </p>
+<p>Creates CAN message for device control. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">standard_id</td><td>11-битный CAN ID (0x000-0x7FF) </td></tr>
-    <tr><td class="paramname">speed</td><td>Значение скорости (0-255) </td></tr>
-    <tr><td class="paramname">checksum</td><td>Контрольная сумма (255 - speed) </td></tr>
-    <tr><td class="paramname">pid</td><td>Управляющий сигнал PID (для определения направления) </td></tr>
+    <tr><td class="paramname">standard_id</td><td>11-bit CAN ID (0x000-0x7FF) </td></tr>
+    <tr><td class="paramname">speed</td><td>Speed value (0-255) </td></tr>
+    <tr><td class="paramname">checksum</td><td>Checksum (255 - speed) </td></tr>
+    <tr><td class="paramname">pid</td><td>PID control signal </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Готовое CAN-сообщение </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>ID должен быть валидным (не превышать 0x7FF) </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Сообщение всегда имеет DLC=8 (8 байт данных)</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>CAN message</dd></dl>
 <div class="dotgraph">
+<img src="dot_inline_dotgraph_3.png" alt="dot_inline_dotgraph_3.png" border="0" usemap="#dot_inline_dotgraph_3.map"/>
 </div>
-<p>Создает CAN-сообщение для управления устройством</p>
+<p>Creates CAN message for device control.</p>
 <ul>
 <li>Данные размещаются в байтах 1 и 3</li>
 <li>Если PID &lt; 0: speed в байте 1, checksum в байте 3</li>
@@ -212,7 +206,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="can_8h_ac77cc569b3615d51ea9a21ef57b73e2a_icgraph.png" border="0" usemap="#acan_8h_ac77cc569b3615d51ea9a21ef57b73e2a_icgraph" alt=""/></div>
 <map name="acan_8h_ac77cc569b3615d51ea9a21ef57b73e2a_icgraph" id="acan_8h_ac77cc569b3615d51ea9a21ef57b73e2a_icgraph">
-<area shape="rect" title="Создает CAN&#45;сообщение для управления устройством" alt="" coords="270,5,415,32"/>
+<area shape="rect" title="Creates CAN message for device control." alt="" coords="270,5,415,32"/>
 <area shape="rect" href="main_8c.html#a6b0eb2f968bdaee862215e6042fe4d9a" title="Задача отправки CAN&#45;сообщений" alt="" coords="103,5,222,32"/>
 <area shape="poly" title=" " alt="" coords="254,21,223,21,223,16,254,16"/>
 <area shape="rect" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Точка входа в программу" alt="" coords="5,5,55,32"/>

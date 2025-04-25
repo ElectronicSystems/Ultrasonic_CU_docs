@@ -1,6 +1,8 @@
 var utils_8h =
 [
+    [ "CHECK_RV", "utils_8h.html#a5253ef34aa92bf4bbc42108cd533f1ef", null ],
     [ "DEADZONE", "utils_8h.html#a08308e05fa7bbbfcf4ffb7a08aa68fa1", null ],
+    [ "debug_printf", "utils_8h.html#ad4d0181076bcf51c58cf91540abac61e", null ],
     [ "KP_DOWN", "utils_8h.html#a7ca40ad93562b3ecabebd64d836834ab", null ],
     [ "KP_UP", "utils_8h.html#ad94e76d87da104c9138f202b3aaa161a", null ],
     [ "LIFT_BONUS", "utils_8h.html#a3e9eaa92b73b653d834d420660029d83", null ],

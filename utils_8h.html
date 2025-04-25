@@ -170,6 +170,12 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_SPEED</b>&#160;&#160;&#160;100</td></tr>
 <tr class="memdesc:ac2cd96d53dd3ba6407db6766c3d92b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальная выходная скорость <br /></td></tr>
 <tr class="separator:ac2cd96d53dd3ba6407db6766c3d92b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4d0181076bcf51c58cf91540abac61e" id="r_ad4d0181076bcf51c58cf91540abac61e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4d0181076bcf51c58cf91540abac61e">debug_printf</a>(fmt, ...)</td></tr>
+<tr class="memdesc:ad4d0181076bcf51c58cf91540abac61e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Макрос для отладочного вывода (работает при DEBUG=1)  <br /></td></tr>
+<tr class="separator:ad4d0181076bcf51c58cf91540abac61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5253ef34aa92bf4bbc42108cd533f1ef" id="r_a5253ef34aa92bf4bbc42108cd533f1ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5253ef34aa92bf4bbc42108cd533f1ef">CHECK_RV</a>(expr,  msg)</td></tr>
+<tr class="memdesc:a5253ef34aa92bf4bbc42108cd533f1ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Макрос проверки создания объектов RTOS.  <br /></td></tr>
+<tr class="separator:a5253ef34aa92bf4bbc42108cd533f1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -203,7 +209,62 @@ Functions</h2></td></tr>
 <div class="dotgraph">
 <img src="dot_inline_dotgraph_13.png" alt="dot_inline_dotgraph_13.png" border="0" usemap="#dot_inline_dotgraph_13.map"/>
 </div>
- </div><h2 class="groupheader">Function Documentation</h2>
+ </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a5253ef34aa92bf4bbc42108cd533f1ef" name="a5253ef34aa92bf4bbc42108cd533f1ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5253ef34aa92bf4bbc42108cd533f1ef">&#9670;&#160;</a></span>CHECK_RV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHECK_RV</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>expr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>msg</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">        <span class="keywordflow">do</span> { \</div>
+<div class="line">            if ((expr) == NULL || (expr) == pdFAIL) { \</div>
+<div class="line">                debug_printf(<span class="stringliteral">&quot;[RTOS ERROR] %s\r\n&quot;</span>, msg); \</div>
+<div class="line">                configASSERT(0); \</div>
+<div class="line">            } \</div>
+<div class="line">        } <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
+<p>Макрос проверки создания объектов RTOS. </p>
+
+</div>
+</div>
+<a id="ad4d0181076bcf51c58cf91540abac61e" name="ad4d0181076bcf51c58cf91540abac61e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4d0181076bcf51c58cf91540abac61e">&#9670;&#160;</a></span>debug_printf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define debug_printf</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>fmt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em></em></span>...&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { <span class="keywordflow">if</span> (<a class="code hl_define" href="settings_8h.html#ad72dbcf6d0153db1b8d8a58001feed83">DEBUG</a>) printf(fmt, ##__VA_ARGS__); } <span class="keywordflow">while</span> (0)</div>
+<div class="ttc" id="asettings_8h_html_ad72dbcf6d0153db1b8d8a58001feed83"><div class="ttname"><a href="settings_8h.html#ad72dbcf6d0153db1b8d8a58001feed83">DEBUG</a></div><div class="ttdeci">#define DEBUG</div><div class="ttdoc">Флаг отладки (1 = включить отладочный вывод)</div><div class="ttdef"><b>Definition</b> settings.h:33</div></div>
+</div><!-- fragment -->
+<p>Макрос для отладочного вывода (работает при DEBUG=1) </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="ac69a16f35e9773a5a54230597a03c020" name="ac69a16f35e9773a5a54230597a03c020"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac69a16f35e9773a5a54230597a03c020">&#9670;&#160;</a></span>applyDeadZone()</h2>
 

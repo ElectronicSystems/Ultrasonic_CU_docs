@@ -3,7 +3,7 @@ var searchData=
   ['data_5ftimeout_5fms_0',['DATA_TIMEOUT_MS',['../settings_8h.html#a5a30fa81d2355438190c829d27d768e7',1,'settings.h']]],
   ['deadzone_1',['DEADZONE',['../utils_8h.html#a08308e05fa7bbbfcf4ffb7a08aa68fa1',1,'utils.h']]],
   ['debug_2',['DEBUG',['../settings_8h.html#ad72dbcf6d0153db1b8d8a58001feed83',1,'settings.h']]],
-  ['debug_5fprintf_3',['debug_printf',['../main_8c.html#ad4d0181076bcf51c58cf91540abac61e',1,'main.c']]],
+  ['debug_5fprintf_3',['debug_printf',['../utils_8h.html#ad4d0181076bcf51c58cf91540abac61e',1,'utils.h']]],
   ['dma1_5fchannel3_5firqhandler_4',['DMA1_Channel3_IRQHandler',['../main_8c.html#aadb8937353693c94b0d8e32fc6f18fc2',1,'main.c']]],
   ['dma1_5fchannel5_5firqhandler_5',['DMA1_Channel5_IRQHandler',['../main_8c.html#abd16b3391557c4a3a8020d675e2c452f',1,'main.c']]],
   ['dma_5fchannels_6',['DMA_channels',['../main_8c.html#a6ac5d789e75518c2ba19d7979c0106d6',1,'main.c']]],

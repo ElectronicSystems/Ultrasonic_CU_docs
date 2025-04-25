@@ -1,6 +1,6 @@
 <map id="user/can.c" name="user/can.c">
 <area shape="rect" id="Node000001" title="Реализация формирования CAN&#45;сообщений" alt="" coords="5,5,88,32"/>
-<area shape="rect" id="Node000002" href="$can_8h.html" title="CAN&#45;интерфейс для отправки управляющих сообщений" alt="" coords="20,80,73,107"/>
+<area shape="rect" id="Node000002" href="$can_8h.html" title="CAN interface for control messages." alt="" coords="20,80,73,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="49,33,49,64,44,64,44,33"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="5,155,88,181"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="49,107,49,139,44,139,44,107"/>
