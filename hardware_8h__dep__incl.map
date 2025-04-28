@@ -2,6 +2,6 @@
 <area shape="rect" id="Node000001" title="Конфигурация аппаратных периферийных устройств" alt="" coords="68,5,182,32"/>
 <area shape="rect" id="Node000002" href="$hardware_8c.html" title="Реализация функций аппаратной конфигурации" alt="" coords="5,80,120,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,46,75,81,71,78,102,42"/>
-<area shape="rect" id="Node000003" href="$main_8c.html" title="Главный модуль системы управления высотой" alt="" coords="143,80,232,107"/>
+<area shape="rect" id="Node000003" href="$user_2main_8c.html" title="Главный модуль системы управления высотой" alt="" coords="143,80,232,107"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,42,179,78,175,81,144,46"/>
 </map>

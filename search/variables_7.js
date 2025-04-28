@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['xcanstatusflags_0',['xCanStatusFlags',['../main_8c.html#a68ebf67a4f36940d5f31931d455b679a',1,'main.c']]],
-  ['xsensorstate_1',['xSensorState',['../main_8c.html#a4e080df031dd1eb8eab7908ace65e573',1,'main.c']]],
-  ['xsensorworkinghandle_2',['xSensorWorkingHandle',['../main_8c.html#a7537a2d39a799d60dc88958daab52ffa',1,'main.c']]],
-  ['xstatemutex_3',['xStateMutex',['../main_8c.html#a8e3db4eced3619cc280124482a688aed',1,'main.c']]]
+  ['sensor_5fready_0',['sensor_ready',['../struct_sensor_state__t.html#a150fd48a2af847458c23a29395904952',1,'SensorState_t']]],
+  ['set_5fheight_1',['SET_HEIGHT',['../group___m_a_i_n___p_r_o_g_r_a_m.html#gaffc43c856f3327fc73c845b3c4596dbe',1,'main.c']]]
 ];

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['sensor_5fready_0',['sensor_ready',['../struct_sensor_state__t.html#a150fd48a2af847458c23a29395904952',1,'SensorState_t']]],
-  ['set_5fheight_1',['SET_HEIGHT',['../main_8c.html#affc43c856f3327fc73c845b3c4596dbe',1,'main.c']]]
+  ['macount_0',['maCount',['../user_2main_8c.html#a7e2319f73c7451c61eaa07aded809ded',1,'main.c']]],
+  ['masum_1',['maSum',['../user_2main_8c.html#ad7c7079b4932556060cc39391329e58e',1,'main.c']]],
+  ['movingaveragearray_2',['movingAverageArray',['../user_2main_8c.html#ab98baeec392d5d1cdbb7d9cb883a15b4',1,'main.c']]]
 ];

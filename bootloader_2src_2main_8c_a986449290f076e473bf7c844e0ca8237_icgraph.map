@@ -1,0 +1,5 @@
+<map id="flash_upgrade_flag_reset" name="flash_upgrade_flag_reset">
+<area shape="rect" id="Node000001" title="Сброс флага обновления" alt="" coords="286,5,416,48"/>
+<area shape="rect" id="Node000002" href="$bootloader_2src_2main_8c.html#a9a4d86ba8a71f5e9ccc9ec39472c75d3" title="Обработчик прерывания приёма CAN." alt="" coords="5,13,238,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="270,29,238,29,238,24,270,24"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="app_load" name="app_load">
+<area shape="rect" id="Node000001" title="Переход в основное приложение" alt="" coords="282,5,355,32"/>
+<area shape="rect" id="Node000002" href="$bootloader_2src_2main_8c.html#a5433e9044b326623ea4c459acc3caa6e" title="Попытка запуска основного приложения" alt="" coords="103,5,234,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="267,21,235,21,235,16,267,16"/>
+<area shape="rect" id="Node000003" href="$bootloader_2src_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Точка входа в бутлоадер" alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title="Точка входа в бутлоадер" alt="" coords="5,81,55,108"/>
+<area shape="rect" id="Node000002" href="$bootloader_2src_2main_8c.html#ad5ed47f43712ee8496049f896b8f9902" title="Конфигурация CAN&#45;контроллера" alt="" coords="107,5,230,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="47,79,101,42,112,36,114,41,104,46,50,83"/>
+<area shape="rect" id="Node000003" href="$bootloader_2src_2main_8c.html#aae77054a108df08e6d652816cd79466b" title="Конфигурация системных часов" alt="" coords="106,56,230,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="54,88,90,81,91,86,55,93"/>
+<area shape="rect" id="Node000004" href="$bootloader_2src_2main_8c.html#a8a8cbb9cd96aedb8420598735807d92d" title="Инициализация GPIO." alt="" coords="105,107,232,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="55,96,90,103,89,108,54,102"/>
+<area shape="rect" id="Node000005" href="$bootloader_2src_2main_8c.html#a5433e9044b326623ea4c459acc3caa6e" title="Попытка запуска основного приложения" alt="" coords="103,157,234,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="50,106,104,143,114,148,112,153,101,148,47,111"/>
+<area shape="rect" id="Node000006" href="$bootloader_2src_2main_8c.html#ad591af1b0a7b4b1f0584baba8a9addf5" title="Переход в основное приложение" alt="" coords="326,132,400,159"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="234,160,311,149,312,155,235,165"/>
+<area shape="rect" id="Node000007" href="$bootloader_2src_2main_8c.html#af249b85a49408f15691ee774112b2a11" title="Чтение флага обновления прошивки" alt="" coords="282,183,444,209"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="235,177,267,181,266,186,234,182"/>
+</map>

@@ -1,0 +1,28 @@
+var group___m_a_i_n___p_r_o_g_r_a_m =
+[
+    [ "CAN_ID", "group___m_a_i_n___p_r_o_g_r_a_m.html#ga1aa9f4ad6589c2013d008a60bd73dfba", null ],
+    [ "CAN_ID_FIRMWARE", "group___m_a_i_n___p_r_o_g_r_a_m.html#ga65dbbe76a2f38fccea48ea43b28f98c4", null ],
+    [ "CAN_PROCESS_PRIORITY", "group___m_a_i_n___p_r_o_g_r_a_m.html#gae6596c5c005a44e86faeb3e813c218ec", null ],
+    [ "CAN_SEND_PERIOD_MS", "group___m_a_i_n___p_r_o_g_r_a_m.html#ga70ea6ef0d649786ea63375b0e5a9bb82", null ],
+    [ "DATA_TIMEOUT_MS", "group___m_a_i_n___p_r_o_g_r_a_m.html#ga5a30fa81d2355438190c829d27d768e7", null ],
+    [ "DEADZONE", "group___m_a_i_n___p_r_o_g_r_a_m.html#ga08308e05fa7bbbfcf4ffb7a08aa68fa1", null ],
+    [ "DEBUG", "group___m_a_i_n___p_r_o_g_r_a_m.html#gad72dbcf6d0153db1b8d8a58001feed83", null ],
+    [ "GLOBAL_TIMEOUT_MS", "group___m_a_i_n___p_r_o_g_r_a_m.html#ga45c428b49826889fe931d6d237e5743e", null ],
+    [ "KP_DOWN", "group___m_a_i_n___p_r_o_g_r_a_m.html#ga7ca40ad93562b3ecabebd64d836834ab", null ],
+    [ "KP_UP", "group___m_a_i_n___p_r_o_g_r_a_m.html#gad94e76d87da104c9138f202b3aaa161a", null ],
+    [ "LIFT_BONUS", "group___m_a_i_n___p_r_o_g_r_a_m.html#ga3e9eaa92b73b653d834d420660029d83", null ],
+    [ "MAX_SPEED", "group___m_a_i_n___p_r_o_g_r_a_m.html#gac2cd96d53dd3ba6407db6766c3d92b26", null ],
+    [ "NUMBER_OF_SENSORS", "group___m_a_i_n___p_r_o_g_r_a_m.html#gaa8f8564a6944121058f4c4278894ead1", null ],
+    [ "PRINT_UART", "group___m_a_i_n___p_r_o_g_r_a_m.html#ga9ab9129c3b0e8327e7ca5b17a55de910", null ],
+    [ "PRINT_UART_CRM_CLK", "group___m_a_i_n___p_r_o_g_r_a_m.html#ga25f8ada5f3c61609c8aee817d05a9a3e", null ],
+    [ "PRINT_UART_TX_GPIO", "group___m_a_i_n___p_r_o_g_r_a_m.html#gab56b891982ad0c0aa08c97488a0174ab", null ],
+    [ "PRINT_UART_TX_GPIO_CRM_CLK", "group___m_a_i_n___p_r_o_g_r_a_m.html#gae89be773fc9a20803b1978ad2686e776", null ],
+    [ "PRINT_UART_TX_PIN", "group___m_a_i_n___p_r_o_g_r_a_m.html#ga3e084a5ab9099162e444e8a747b2229f", null ],
+    [ "RAW_DATA_QUEUE_SIZE", "group___m_a_i_n___p_r_o_g_r_a_m.html#ga676783b08f3e15713919dbd0c838c081", null ],
+    [ "RX_BUFFER_SIZE", "group___m_a_i_n___p_r_o_g_r_a_m.html#ga739a2a1a0047c98ac1b18ecd25dac092", null ],
+    [ "SENSOR_RESPONSE_AWAIT_MS", "group___m_a_i_n___p_r_o_g_r_a_m.html#gadc6f1ff4a447a5fd22a368dbb781970d", null ],
+    [ "SENSOR_TRIGGER_PRIORITY", "group___m_a_i_n___p_r_o_g_r_a_m.html#ga342b8257711027519c9dd9db671666f6", null ],
+    [ "SMOOTH_DELTA", "group___m_a_i_n___p_r_o_g_r_a_m.html#ga1b0eae30655ec83b4271ace01d25cab4", null ],
+    [ "UART_PROCESS_PRIORITY", "group___m_a_i_n___p_r_o_g_r_a_m.html#ga403bd7661f73c56f7e5006a7e3314f78", null ],
+    [ "SET_HEIGHT", "group___m_a_i_n___p_r_o_g_r_a_m.html#gaffc43c856f3327fc73c845b3c4596dbe", null ]
+];

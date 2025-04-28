@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['rawdataqueue_0',['RawDataQueue',['../main_8c.html#a30c574ba42c09ca260fe592a0e857948',1,'main.c']]],
-  ['rx_5fbuffers_1',['rx_buffers',['../main_8c.html#a98d5c665804561652155e36a8c0ab82f',1,'main.c']]]
+  ['flash_5fdword_0',['flash_dword',['../group___b_o_o_t_l_o_a_d_e_r.html#ga81f861e26668e9aefffeb4b13a38f751',1,'main.c']]]
 ];

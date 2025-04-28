@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['uart_5fprint_5finit_0',['uart_print_init',['../uart_8h.html#ab45b100ec64e584d291bf1798f0f52cf',1,'uart.c']]],
-  ['usart_5fconfiguration_1',['usart_configuration',['../main_8c.html#a111a69a28ad875b06c82a8712519b243',1,'usart_configuration(void):&#160;main.c'],['../uart_8h.html#a111a69a28ad875b06c82a8712519b243',1,'usart_configuration(void):&#160;main.c']]]
+  ['regulateheight_0',['regulateHeight',['../utils_8c.html#aa6006aeead6e70a897c4ce05b5b3388f',1,'regulateHeight(uint16_t current_height, uint16_t setpoint, float dt):&#160;utils.c'],['../utils_8h.html#aa6006aeead6e70a897c4ce05b5b3388f',1,'regulateHeight(uint16_t current_height, uint16_t setpoint, float dt):&#160;utils.c']]]
 ];

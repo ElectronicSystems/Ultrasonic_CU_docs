@@ -1,7 +1,0 @@
-<map id="DMA_reset" name="DMA_reset">
-<area shape="rect" id="Node000001" title="Перезапуск приема DMA и очистка буфера" alt="" coords="295,5,382,32"/>
-<area shape="rect" id="Node000002" href="$main_8c.html#a64e0ea8aad7e1e83ea272f832e1d1203" title="Задача обработки данных датчиков" alt="" coords="103,5,247,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="279,21,247,21,247,16,279,16"/>
-<area shape="rect" id="Node000003" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Точка входа в программу" alt="" coords="5,5,55,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
-</map>

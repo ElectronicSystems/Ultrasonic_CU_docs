@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main_0',['main',['../main_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main.c']]]
+  ['hardware_5finit_0',['hardware_init',['../user_2main_8c.html#a47191dfa6786da2498eb49ae28f8d361',1,'main.c']]]
 ];

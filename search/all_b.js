@@ -1,8 +1,13 @@
 var searchData=
 [
-  ['raw_5fdata_5fqueue_5fsize_0',['RAW_DATA_QUEUE_SIZE',['../settings_8h.html#a676783b08f3e15713919dbd0c838c081',1,'settings.h']]],
-  ['rawdataqueue_1',['RawDataQueue',['../main_8c.html#a30c574ba42c09ca260fe592a0e857948',1,'main.c']]],
-  ['regulateheight_2',['regulateHeight',['../utils_8c.html#aa6006aeead6e70a897c4ce05b5b3388f',1,'regulateHeight(uint16_t current_height, uint16_t setpoint, float dt):&#160;utils.c'],['../utils_8h.html#aa6006aeead6e70a897c4ce05b5b3388f',1,'regulateHeight(uint16_t current_height, uint16_t setpoint, float dt):&#160;utils.c']]],
-  ['rx_5fbuffer_5fsize_3',['RX_BUFFER_SIZE',['../settings_8h.html#a739a2a1a0047c98ac1b18ecd25dac092',1,'settings.h']]],
-  ['rx_5fbuffers_4',['rx_buffers',['../main_8c.html#a98d5c665804561652155e36a8c0ab82f',1,'main.c']]]
+  ['macount_0',['maCount',['../user_2main_8c.html#a7e2319f73c7451c61eaa07aded809ded',1,'main.c']]],
+  ['main_1',['main',['../user_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main(void):&#160;main.c'],['../bootloader_2src_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main(void):&#160;main.c']]],
+  ['main_2ec_2',['main.c',['../bootloader_2src_2main_8c.html',1,'(Global Namespace)'],['../user_2main_8c.html',1,'(Global Namespace)']]],
+  ['main_2eh_3',['main.h',['../main_8h.html',1,'']]],
+  ['main_5fprogram_5fpage_5fnumber_4',['MAIN_PROGRAM_PAGE_NUMBER',['../group___b_o_o_t_l_o_a_d_e_r.html#ga0a185e9a5100faaa288a14628c5fbfc5',1,'main.c']]],
+  ['main_5fprogram_5fstart_5faddress_5',['MAIN_PROGRAM_START_ADDRESS',['../group___b_o_o_t_l_o_a_d_e_r.html#gad5229af48d378ec5984043a8a7ab11c2',1,'main.c']]],
+  ['masum_6',['maSum',['../user_2main_8c.html#ad7c7079b4932556060cc39391329e58e',1,'main.c']]],
+  ['max_5fspeed_7',['MAX_SPEED',['../group___m_a_i_n___p_r_o_g_r_a_m.html#gac2cd96d53dd3ba6407db6766c3d92b26',1,'utils.h']]],
+  ['moving_5faverage_5fwindow_5fsize_8',['MOVING_AVERAGE_WINDOW_SIZE',['../user_2main_8c.html#a9d9c640471e771d758f39d41de308f97',1,'main.c']]],
+  ['movingaveragearray_9',['movingAverageArray',['../user_2main_8c.html#ab98baeec392d5d1cdbb7d9cb883a15b4',1,'main.c']]]
 ];

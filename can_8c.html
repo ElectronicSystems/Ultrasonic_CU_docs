@@ -104,7 +104,9 @@ $(function(){initNavTree('can_8c.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">can.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -125,11 +127,28 @@ Include dependency graph for can.c:</div>
 </map>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga65dbbe76a2f38fccea48ea43b28f98c4" id="r_ga65dbbe76a2f38fccea48ea43b28f98c4"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CAN_ID_FIRMWARE</b>&#160;&#160;&#160;0x708</td></tr>
+<tr class="memdesc:ga65dbbe76a2f38fccea48ea43b28f98c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAN ID для вызова прошивки bin файла <br /></td></tr>
+<tr class="separator:ga65dbbe76a2f38fccea48ea43b28f98c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ac77cc569b3615d51ea9a21ef57b73e2a" id="r_ac77cc569b3615d51ea9a21ef57b73e2a"><td class="memItemLeft" align="right" valign="top">can_tx_message_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac77cc569b3615d51ea9a21ef57b73e2a">create_can_message</a> (uint16_t standard_id, uint8_t speed, uint8_t checksum, int16_t pid)</td></tr>
 <tr class="memdesc:ac77cc569b3615d51ea9a21ef57b73e2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Формирует CAN-сообщение с учетом направления (PID)  <br /></td></tr>
 <tr class="separator:ac77cc569b3615d51ea9a21ef57b73e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a4d86ba8a71f5e9ccc9ec39472c75d3" id="r_a9a4d86ba8a71f5e9ccc9ec39472c75d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a4d86ba8a71f5e9ccc9ec39472c75d3">USBFS_L_CAN1_RX0_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a9a4d86ba8a71f5e9ccc9ec39472c75d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прерывание для отслеживания ID посылки, запускающей прошивку  <br /></td></tr>
+<tr class="separator:a9a4d86ba8a71f5e9ccc9ec39472c75d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ab44448d861ab06797bcbf9d679488d63" id="r_ab44448d861ab06797bcbf9d679488d63"><td class="memItemLeft" align="right" valign="top"><a id="ab44448d861ab06797bcbf9d679488d63" name="ab44448d861ab06797bcbf9d679488d63"></a>
+can_rx_message_type&#160;</td><td class="memItemRight" valign="bottom"><b>CAN_message</b></td></tr>
+<tr class="memdesc:ab44448d861ab06797bcbf9d679488d63"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAN_message струтктура для отслеживания ID. <br /></td></tr>
+<tr class="separator:ab44448d861ab06797bcbf9d679488d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Реализация формирования CAN-сообщений </p>
@@ -177,7 +196,7 @@ Functions</h2></td></tr>
 <li>Если PID &lt; 0: speed в байте 1, checksum в байте 3</li>
 <li>Если PID &gt;= 0: checksum в байте 1, speed в байте 3 <div class="fragment"><div class="line"><span class="comment">// Пример использования:</span></div>
 <div class="line">can_tx_message_type msg = <a class="code hl_function" href="#ac77cc569b3615d51ea9a21ef57b73e2a">create_can_message</a>(0x196, 50, 205, -30);</div>
-<div class="ttc" id="acan_8c_html_ac77cc569b3615d51ea9a21ef57b73e2a"><div class="ttname"><a href="#ac77cc569b3615d51ea9a21ef57b73e2a">create_can_message</a></div><div class="ttdeci">can_tx_message_type create_can_message(uint16_t standard_id, uint8_t speed, uint8_t checksum, int16_t pid)</div><div class="ttdoc">Формирует CAN-сообщение с учетом направления (PID)</div><div class="ttdef"><b>Definition</b> can.c:38</div></div>
+<div class="ttc" id="acan_8c_html_ac77cc569b3615d51ea9a21ef57b73e2a"><div class="ttname"><a href="#ac77cc569b3615d51ea9a21ef57b73e2a">create_can_message</a></div><div class="ttdeci">can_tx_message_type create_can_message(uint16_t standard_id, uint8_t speed, uint8_t checksum, int16_t pid)</div><div class="ttdoc">Формирует CAN-сообщение с учетом направления (PID)</div><div class="ttdef"><b>Definition</b> can.c:46</div></div>
 </div><!-- fragment --> </li>
 </ul>
 <div class="dynheader">
@@ -186,12 +205,32 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="can_8c_ac77cc569b3615d51ea9a21ef57b73e2a_icgraph.png" border="0" usemap="#acan_8c_ac77cc569b3615d51ea9a21ef57b73e2a_icgraph" alt=""/></div>
 <map name="acan_8c_ac77cc569b3615d51ea9a21ef57b73e2a_icgraph" id="acan_8c_ac77cc569b3615d51ea9a21ef57b73e2a_icgraph">
 <area shape="rect" title="Формирует CAN&#45;сообщение с учетом направления (PID)" alt="" coords="270,5,415,32"/>
-<area shape="rect" href="main_8c.html#a6b0eb2f968bdaee862215e6042fe4d9a" title="Задача отправки CAN&#45;сообщений" alt="" coords="103,5,222,32"/>
+<area shape="rect" href="user_2main_8c.html#a6b0eb2f968bdaee862215e6042fe4d9a" title="Задача отправки CAN&#45;сообщений" alt="" coords="103,5,222,32"/>
 <area shape="poly" title=" " alt="" coords="254,21,223,21,223,16,254,16"/>
-<area shape="rect" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Точка входа в программу" alt="" coords="5,5,55,32"/>
+<area shape="rect" href="user_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Точка входа в программу" alt="" coords="5,5,55,32"/>
 <area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a9a4d86ba8a71f5e9ccc9ec39472c75d3" name="a9a4d86ba8a71f5e9ccc9ec39472c75d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a4d86ba8a71f5e9ccc9ec39472c75d3">&#9670;&#160;</a></span>USBFS_L_CAN1_RX0_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void USBFS_L_CAN1_RX0_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Прерывание для отслеживания ID посылки, запускающей прошивку </p>
+<p>Ловим посылку с CAN_ID_FIRMWARE для начала прошивки </p>
 
 </div>
 </div>

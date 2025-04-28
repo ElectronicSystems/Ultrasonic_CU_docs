@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['pidqueue_0',['PIDQueue',['../main_8c.html#a13e6e44c47d73582ea3e7cecd10f9eaf',1,'main.c']]],
-  ['previous_5fheight_1',['previous_height',['../utils_8c.html#a6a66b20b997aade0c61830544d78a775',1,'utils.c']]],
-  ['previous_5fpid_2',['previous_pid',['../utils_8c.html#a865c4767467074120c22985a199ce60b',1,'utils.c']]],
-  ['processeddataqueue_3',['ProcessedDataQueue',['../main_8c.html#ae168ff74cab0dec30d3ebc1368103a00',1,'main.c']]]
+  ['dma_5fchannels_0',['DMA_channels',['../user_2main_8c.html#a6ac5d789e75518c2ba19d7979c0106d6',1,'main.c']]],
+  ['dma_5fready_5fcount_1',['dma_ready_count',['../user_2main_8c.html#a483ddcb7fafc3ecc5bd2514f45414195',1,'main.c']]],
+  ['dma_5frx_5fdone_2',['dma_rx_done',['../user_2main_8c.html#a31eaa43e9c440fc947d616653dc7e5c4',1,'main.c']]]
 ];

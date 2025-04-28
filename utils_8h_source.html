@@ -120,47 +120,42 @@ $(function(){initNavTree('utils_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">  #include &quot;at32f413.h&quot;</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="utils_8h.html#a08308e05fa7bbbfcf4ffb7a08aa68fa1">   37</a></span><span class="preprocessor">  #define DEADZONE 5</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="utils_8h.html#ad94e76d87da104c9138f202b3aaa161a">   40</a></span><span class="preprocessor">  #define KP_UP 1.5f</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="utils_8h.html#a7ca40ad93562b3ecabebd64d836834ab">   43</a></span><span class="preprocessor">  #define KP_DOWN 1.0f</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="utils_8h.html#a3e9eaa92b73b653d834d420660029d83">   46</a></span><span class="preprocessor">  #define LIFT_BONUS 10</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="utils_8h.html#a1b0eae30655ec83b4271ace01d25cab4">   49</a></span><span class="preprocessor">  #define SMOOTH_DELTA 3</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="utils_8h.html#ac2cd96d53dd3ba6407db6766c3d92b26">   52</a></span><span class="preprocessor">  #define MAX_SPEED 100</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="utils_8h.html#ad4d0181076bcf51c58cf91540abac61e">   55</a></span><span class="preprocessor">    #define debug_printf(fmt, ...) do { if (DEBUG) printf(fmt, ##__VA_ARGS__); } while (0)</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
-<div class="foldopen" id="foldopen00058" data-start="" data-end="">
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="utils_8h.html#a5253ef34aa92bf4bbc42108cd533f1ef">   58</a></span><span class="preprocessor">    #define CHECK_RV(expr, msg) \</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">        do { \</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">            if ((expr) == NULL || (expr) == pdFAIL) { \</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">                debug_printf(&quot;[RTOS ERROR] %s\r\n&quot;, msg); \</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">                configASSERT(0); \</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">            } \</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">        } while (0)</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="group___m_a_i_n___p_r_o_g_r_a_m.html#ga08308e05fa7bbbfcf4ffb7a08aa68fa1">   38</a></span><span class="preprocessor">  #define DEADZONE 5 </span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="group___m_a_i_n___p_r_o_g_r_a_m.html#gad94e76d87da104c9138f202b3aaa161a">   39</a></span><span class="preprocessor">  #define KP_UP 1.5f </span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="group___m_a_i_n___p_r_o_g_r_a_m.html#ga7ca40ad93562b3ecabebd64d836834ab">   40</a></span><span class="preprocessor">  #define KP_DOWN 1.0f </span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="group___m_a_i_n___p_r_o_g_r_a_m.html#ga3e9eaa92b73b653d834d420660029d83">   41</a></span><span class="preprocessor">  #define LIFT_BONUS 10 </span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="group___m_a_i_n___p_r_o_g_r_a_m.html#ga1b0eae30655ec83b4271ace01d25cab4">   42</a></span><span class="preprocessor">  #define SMOOTH_DELTA 3 </span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="group___m_a_i_n___p_r_o_g_r_a_m.html#gac2cd96d53dd3ba6407db6766c3d92b26">   43</a></span><span class="preprocessor">  #define MAX_SPEED 100 </span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="utils_8h.html#ad4d0181076bcf51c58cf91540abac61e">   47</a></span><span class="preprocessor">    #define debug_printf(fmt, ...) do { if (DEBUG) printf(fmt, ##__VA_ARGS__); } while (0)</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span></div>
+<div class="foldopen" id="foldopen00050" data-start="" data-end="">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="utils_8h.html#a5253ef34aa92bf4bbc42108cd533f1ef">   50</a></span><span class="preprocessor">    #define CHECK_RV(expr, msg) \</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">        do { \</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">            if ((expr) == NULL || (expr) == pdFAIL) { \</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">                debug_printf(&quot;[RTOS ERROR] %s\r\n&quot;, msg); \</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">                configASSERT(0); \</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">            } \</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">        } while (0)</span></div>
 </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  int16_t <a class="code hl_function" href="utils_8h.html#ac69a16f35e9773a5a54230597a03c020">applyDeadZone</a>(int16_t error, int16_t deadzone);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  int16_t <a class="code hl_function" href="utils_8h.html#ab6132707cf583041db10df43f16c04e6">smoothSpeed</a>(int16_t current_speed, int16_t previous_speed, int16_t max_delta);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  int16_t <a class="code hl_function" href="utils_8h.html#afb5b4b0af7b85810a055d6c2ecb4b56c">computeAsymmetricP</a>(uint16_t input, uint16_t setpoint, <span class="keywordtype">float</span> Kp_up, <span class="keywordtype">float</span> Kp_down);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  <span class="keywordtype">float</span> <a class="code hl_function" href="utils_8h.html#a5b6550a655d6a5105460fb1d696ca695">predictHeight</a>(<span class="keywordtype">float</span> current_height, <span class="keywordtype">float</span> <a class="code hl_variable" href="utils_8c.html#a6a66b20b997aade0c61830544d78a775">previous_height</a>, <span class="keywordtype">float</span> dt);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  int16_t <a class="code hl_function" href="utils_8h.html#ac69a16f35e9773a5a54230597a03c020">applyDeadZone</a>(int16_t error, int16_t deadzone);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  int16_t <a class="code hl_function" href="utils_8h.html#ab6132707cf583041db10df43f16c04e6">smoothSpeed</a>(int16_t current_speed, int16_t previous_speed, int16_t max_delta);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  int16_t <a class="code hl_function" href="utils_8h.html#afb5b4b0af7b85810a055d6c2ecb4b56c">computeAsymmetricP</a>(uint16_t input, uint16_t setpoint, <span class="keywordtype">float</span> Kp_up, <span class="keywordtype">float</span> Kp_down);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <span class="keywordtype">float</span> <a class="code hl_function" href="utils_8h.html#a5b6550a655d6a5105460fb1d696ca695">predictHeight</a>(<span class="keywordtype">float</span> current_height, <span class="keywordtype">float</span> <a class="code hl_variable" href="utils_8c.html#a6a66b20b997aade0c61830544d78a775">previous_height</a>, <span class="keywordtype">float</span> dt);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  int16_t <a class="code hl_function" href="utils_8h.html#ab9a47acbf7ba8d61c0e86c58e170b151">prioritizeLift</a>(int16_t pid, int16_t lift_bonus);</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  int16_t <a class="code hl_function" href="utils_8h.html#ab9a47acbf7ba8d61c0e86c58e170b151">prioritizeLift</a>(int16_t pid, int16_t lift_bonus);</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span></div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  int16_t <a class="code hl_function" href="utils_8h.html#aa6006aeead6e70a897c4ce05b5b3388f">regulateHeight</a>(uint16_t current_height, uint16_t setpoint, <span class="keywordtype">float</span> dt);</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="preprocessor">  #ifdef __cplusplus</span></div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>}</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="preprocessor">#endif </span><span class="comment">/* UTILS_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  int16_t <a class="code hl_function" href="utils_8h.html#aa6006aeead6e70a897c4ce05b5b3388f">regulateHeight</a>(uint16_t current_height, uint16_t setpoint, <span class="keywordtype">float</span> dt);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="preprocessor">  #ifdef __cplusplus</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>}</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="preprocessor">#endif </span><span class="comment">/* UTILS_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="autils_8c_html_a6a66b20b997aade0c61830544d78a775"><div class="ttname"><a href="utils_8c.html#a6a66b20b997aade0c61830544d78a775">previous_height</a></div><div class="ttdeci">float previous_height</div><div class="ttdoc">Предыдущее значение высоты для прогнозирования</div><div class="ttdef"><b>Definition</b> utils.c:25</div></div>
 <div class="ttc" id="autils_8h_html_a5b6550a655d6a5105460fb1d696ca695"><div class="ttname"><a href="utils_8h.html#a5b6550a655d6a5105460fb1d696ca695">predictHeight</a></div><div class="ttdeci">float predictHeight(float current_height, float previous_height, float dt)</div><div class="ttdoc">Прогнозирует высоту на следующем шаге</div><div class="ttdef"><b>Definition</b> utils.c:52</div></div>
 <div class="ttc" id="autils_8h_html_aa6006aeead6e70a897c4ce05b5b3388f"><div class="ttname"><a href="utils_8h.html#aa6006aeead6e70a897c4ce05b5b3388f">regulateHeight</a></div><div class="ttdeci">int16_t regulateHeight(uint16_t current_height, uint16_t setpoint, float dt)</div><div class="ttdoc">Основная функция PID-регулятора</div><div class="ttdef"><b>Definition</b> utils.c:62</div></div>
