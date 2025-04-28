@@ -1,5 +1,5 @@
 <map id="USBFS_L_CAN1_RX0_IRQHandler" name="USBFS_L_CAN1_RX0_IRQHandler">
-<area shape="rect" id="Node000001" title="Обработчик прерывания приёма CAN." alt="" coords="5,157,238,184"/>
+<area shape="rect" id="Node000001" title="Обработчик прерывания приёма сообщений по CAN1 RX0." alt="" coords="5,157,238,184"/>
 <area shape="rect" id="Node000002" href="$bootloader_2src_2main_8c.html#afedb13964f2e3d04c62958e50020323c" title="Программирование страницы флеш&#45;памяти" alt="" coords="304,5,440,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,155,197,100,239,69,284,42,298,35,300,40,287,46,242,73,200,105,139,159"/>
 <area shape="rect" id="Node000003" href="$bootloader_2src_2main_8c.html#a7e7ed93e0a308b229bfd403ae6d7afc1" title="Очистка буфера нулями" alt="" coords="327,56,417,83"/>

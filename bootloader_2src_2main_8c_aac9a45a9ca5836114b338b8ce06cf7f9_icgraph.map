@@ -1,5 +1,5 @@
 <map id="Crc32" name="Crc32">
 <area shape="rect" id="Node000001" title="Вычисление контрольной суммы CRC32." alt="" coords="286,5,342,32"/>
-<area shape="rect" id="Node000002" href="$bootloader_2src_2main_8c.html#a9a4d86ba8a71f5e9ccc9ec39472c75d3" title="Обработчик прерывания приёма CAN." alt="" coords="5,5,238,32"/>
+<area shape="rect" id="Node000002" href="$bootloader_2src_2main_8c.html#a9a4d86ba8a71f5e9ccc9ec39472c75d3" title="Обработчик прерывания приёма сообщений по CAN1 RX0." alt="" coords="5,5,238,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="270,21,238,21,238,16,270,16"/>
 </map>
